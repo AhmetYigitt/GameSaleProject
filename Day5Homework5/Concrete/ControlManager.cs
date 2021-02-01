@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Day5Homework5.Abstract;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Day5Homework5
 {
-    class ControlManager : IControlService
+    public class ControlManager : IControlService
     {
         public void GamerControl(Gamer gamer)
         {

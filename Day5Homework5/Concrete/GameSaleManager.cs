@@ -1,14 +1,15 @@
-﻿using System;
+﻿using Day5Homework5.Abstract;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Day5Homework5
 {
-    class GameSaleManager : IGameSaleService
+    public class GameSaleManager : IGameSaleService
     {
         public void GameSale1(Gamer gamer, Game game, Campaign campaign)
         {
-            Console.WriteLine(gamer.FirstName + " " + campaign.CampaignName + "Kampanyası Kullanarak "
+            Console.WriteLine(gamer.FirstName + " " + campaign.CampaignName + " Kullanarak "
                 + game.GameName + " " + "Satın Aldı");
         }
 

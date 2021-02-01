@@ -1,16 +1,19 @@
-﻿using System;
+﻿using Day5Homework5.Abstract;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Day5Homework5
 {
-    internal class ListManager : IListService
+    public class ListManager : IListService
     {
         public void CampaignList(List<Campaign> campaigns)
         {
+            int i = 1;
             foreach (var campaign in campaigns)
             {
-                Console.WriteLine(campaign.CampaignName);
+                Console.WriteLine(i + "-" + campaign.CampaignName);
+                i++;
             }
         }
 

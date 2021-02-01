@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Day5Homework5
+namespace Day5Homework5.Abstract
 {
-    interface IGamerService
+    public interface IGamerService
     {
         void Add(Gamer gamer);
         void Delete(Gamer gamer);
